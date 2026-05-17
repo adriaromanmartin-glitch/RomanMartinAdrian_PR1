@@ -248,7 +248,7 @@ async function resetTimer() {
   remainingSeconds = totalSeconds;
 
   // Recuperem text del botó
-  startBtn.textContent = 'Empezar';
+  startBtn.textContent = 'Començar';
 
   // Actualitzem interfície
   updateTimerText();
