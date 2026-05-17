@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Garden</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>Focus Garden</h1>
+      <button id="settingsBtn">⚙️</button>
+    </header>
+
+    <section id="settingsPanel" class="hidden">
+      <label>
+        Minutos:
+        <input id="minutesInput" type="number" min="1" max="60" value="5" />
+      </label>
+
+      <label>
+        Tamaño visual:
+        <input id="sizeInput" type="range" min="40" max="140" value="80" />
+      </label>
+
+      <label>
+        <input id="nightModeInput" type="checkbox" />
+        Modo noche
+      </label>
+
+      <button id="saveSettingsBtn">Guardar configuración</button>
+    </section>
+
+    <main>
+      <div id="p5-container"></div>
+
+      <p id="timerText">05:00</p>
+
+      <div class="buttons">
+        <button id="startBtn">Empezar</button>
+        <button id="resetBtn">Reiniciar</button>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
