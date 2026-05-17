@@ -195,7 +195,7 @@ async function startTimer() {
   isRunning = true;
 
   // Actualitzem text del botó
-  startBtn.textContent = 'En marcha...';
+  startBtn.textContent = 'Posat en marxa...';
 
   // Vibració lleugera
   await vibrate(ImpactStyle.Light);
@@ -220,7 +220,7 @@ async function startTimer() {
       isRunning = false;
 
       // Recuperem text inicial del botó
-      startBtn.textContent = 'Empezar';
+      startBtn.textContent = 'Començar';
 
       // Vibració final
       await Haptics.vibrate();
